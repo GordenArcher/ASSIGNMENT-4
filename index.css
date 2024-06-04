@@ -603,6 +603,19 @@ nav .profile_user .user_ .auth ul a:hover{
 
 .contact .contact_section .location{
     width: 100%;
+    height: 100%;
+}
+
+.contact .contact_section .location .restaurant_location{
+    width: 100%;
+    padding: 20px;
+    height: 100%;
+}
+
+.contact .contact_section .location .restaurant_location img{
+    width: 100%;
+    padding: 20px;
+    height: 100%;
 }
 
 .contact .contact_section .contact_form{
