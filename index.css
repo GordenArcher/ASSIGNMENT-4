@@ -257,6 +257,12 @@ nav .profile_user .user_ .auth ul a:hover{
     object-fit: cover;
 }
 
+.active_but{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
 .about_food{
     width: 100%;
     height: 100%;
@@ -323,7 +329,7 @@ nav .profile_user .user_ .auth ul a:hover{
 
 .about_food .about_food__ .about_item .about_item_image{
     width: 100%;
-    height: 60%;
+    height: 300px;
 }
 
 .about_food .about_food__ .about_item .about_item_image img{
@@ -506,14 +512,46 @@ nav .profile_user .user_ .auth ul a:hover{
 
 .spinner{
     width: 100%;
-    height: 100%;
+    margin: 40px 0;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    justify-content: center;
     display: none;
 }
 
+.loader {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #FFF;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+  
+.loader::after {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border-bottom: 4px solid #FF3D00;
+    border-left: 4px solid transparent;
+}
+
+@keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+} 
+/* 
 .loader {
     width: 400px;
     height: 380px;
@@ -546,7 +584,7 @@ nav .profile_user .user_ .auth ul a:hover{
     to {
         background-position: 185px 0, center 0, center 115px, center 142px;
     }
-}
+} */
 
 .footer{
     background: #fff;

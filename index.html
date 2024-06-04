@@ -119,14 +119,16 @@
                                                 </div>
                                               </div>
                                             </div>
-                                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                              <span class="visually-hidden">Previous</span>
-                                            </button>
-                                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                              <span class="visually-hidden">Next</span>
-                                            </button>
+                                            <div class="active_but">
+                                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                  </button>
+                                                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                  </button>
+                                            </div>
                                           </div>
                                     </div>
                                 </div>
@@ -288,13 +290,13 @@
                                                                 </div>
                                                             </div>
                                                         </div> -->
+                                                    </div>
 
+                                                    <center>
                                                         <div class="spinner">
                                                             <div class="loader"></div>
-                                                            <div class="loader"></div>
-                                                            <div class="loader"></div>
                                                         </div>
-                                                    </div>
+                                                    </center>
                                                 </div>
                                             </div>
                                         </div>
@@ -309,8 +311,8 @@
                                     </div>
 
                                     <div class="copy_right">
-                                        <span class="copy_right"></span>
-                                        <span>&copy; G-KANAD software development company</span>
+                                        <span class="copy_right_year"></span>
+                                        <p style="color: black;">&copy; G-KANAD software development company</p>
                                     </div>
                                 </footer>
                             </section>
@@ -329,7 +331,7 @@
             auth.classList.toggle('auth_active')
         })
 
-        const Cpy = document.querySelector('.copy_right')
+        const Cpy = document.querySelector('.copy_right_year')
 
         const year = new Date()
         const getYear = year.getFullYear()
