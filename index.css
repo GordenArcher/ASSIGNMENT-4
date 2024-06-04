@@ -187,6 +187,7 @@ nav .profile_user .user_ .auth{
 nav .profile_user .user_ .auth_active{
     display: initial;
     opacity: 1;
+    z-index: 99;
 }
 
 nav .profile_user .user_ .auth ul{
@@ -197,7 +198,7 @@ nav .profile_user .user_ .auth ul{
     flex-direction: column;
     gap: 10px;
     padding: 8px;
-    background-color: #ccc;
+    background-color: hsl(0, 0%, 100%);
     border-radius: 4px;
     box-shadow: 2px 3px 4px #111;
     position: relative;
@@ -220,7 +221,7 @@ nav .profile_user .user_ .auth ul a{
 }
 
 nav .profile_user .user_ .auth ul a:hover{
-    background: #aaa;
+    background: hwb(0 80% 20%);
 }
 
 .main_content{
@@ -241,6 +242,19 @@ nav .profile_user .user_ .auth ul a:hover{
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+#carouselExampleCaptions{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.carousel-item img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
 }
 
 .about_food{
@@ -278,4 +292,269 @@ nav .profile_user .user_ .auth ul a:hover{
 .about_food .about_head_message p{
     font-weight: 800;
     margin-top: 10px;
+}
+
+.about_food .about_food__{
+    width: 100%;
+    height: 100%;
+}
+
+.about_food .flex{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.about_food .about_flex{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 8px;
+}
+
+.about_food .about_food__ .about_item{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.about_food .about_food__ .about_item .about_item_image{
+    width: 100%;
+    height: 60%;
+}
+
+.about_food .about_food__ .about_item .about_item_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+.about_food .about_food__ .about_item .about_item_head{
+    text-align: center;
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.about_food .about_food__ .about_item .about_item_head h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #316ff6;
+}
+
+.about_food .about_food__ .about_item .about_item_desc{
+    font-size: 1.1rem;
+    width: 100%;
+    text-align: center;
+}
+
+.menu{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.menu .menu_wrapper{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menu .menu_wrapper .menu_header{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.menu .menu_wrapper .menu_header h2{
+    font-size: 3rem;
+    color: #316ff6;
+}
+
+.menu .menu_wrapper .menu_header span{
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 800;
+}
+
+.menu .menu_wrapper .menu_items{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.menu .menu_wrapper .menu_items .meuuu_food{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.menu .menu_wrapper .menu_items .meuuu_food .menu_search{
+    width: 100%;
+    position: relative;
+    text-align: right;
+    padding: 20px;
+}
+
+.menu .menu_wrapper .menu_items .meuuu_food .menu_search input{
+    width: 360px;
+    height: 55px;
+    position: relative;
+    text-align: left;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #316ff6;
+    color: #000;
+    font-size: 1.1rem;
+    outline: none;
+    background-color: transparent;
+    transition: all .4s ease;
+}
+
+.menu .menu_wrapper .menu_items .meuuu_food .menu_search input:focus{
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 4px;
+    color: #000;
+}
+
+.menu_food_container{
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+}
+
+.menu_food_container .menu__item_{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 7px;
+}
+
+.menu_food_container .menu__item_ .menu_item{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.menu_food_container .menu__item_ .menu_item .menu_item_image{
+    width: 100%;
+    /* height: 300px; */
+    position: relative;
+}
+
+.menu_food_container .menu__item_ .menu_item .menu_item_image img{
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.menu_food_container .menu__item_ .menu_item .item_body{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menu_food_container .menu__item_ .menu_item .item_body .menu_name{
+    width: 100%;
+    margin-top: 13px;
+    font-size: 2rem;
+}
+
+.menu_food_container .menu__item_ .menu_item .item_body .menu_price{
+    width: 100%;
+    margin-top: 6px;
+    font-size: 1rem;
+}
+
+.menu_food_container .menu__item_ .menu_item .item_body .menu_button{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.menu_food_container .menu__item_ .menu_item .item_body .menu_button button{
+    width: 100%;
+    height: 45px;
+    font-size: 1.3rem;
+    background: hsl(221, 92%, 58%);
+    border: none;
+    border-radius: 7px;
+    color: hsl(0, 0%, 100%);
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.spinner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    display: none;
+}
+
+.loader {
+    width: 400px;
+    height: 380px;
+    display: block;
+    margin: auto;
+    position: relative;
+    background: #FFF;
+    box-sizing: border-box;
+}
+
+.loader::after {
+    content: '';
+    width: calc(100% - 30px);
+    height: calc(100% - 15px);
+    top: 15px;
+    left: 15px;
+    position: absolute;
+    background-image: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5) 50%, transparent 100%),
+        linear-gradient(#DDD 100px, transparent 0),
+        linear-gradient(#DDD 16px, transparent 0),
+        linear-gradient(#DDD 50px, transparent 0);
+    background-repeat: no-repeat;
+    background-size: 75px 175px, 100% 100px, 100% 16px, 100% 30px;
+    background-position: -185px 0, center 0, center 115px, center 142px;
+    box-sizing: border-box;
+    animation: animloader 1s linear infinite;
+}
+
+@keyframes animloader {
+    to {
+        background-position: 185px 0, center 0, center 115px, center 142px;
+    }
+}
+
+.footer{
+    background: #fff;
+    position: relative;
+}
+
+.footer footer{
+    width: 100%;
+    height: 100%;
+    color: #000;
 }

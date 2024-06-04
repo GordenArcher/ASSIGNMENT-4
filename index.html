@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="index.css">
@@ -64,7 +67,11 @@
                             <div class="profile_user">
                                 <div class="timer">
                                     <div class="time_display">
-                                        <span>09 : 12 : 00</span>
+                                        <span class="hours">09</span>
+                                        <span>:</span>
+                                        <span class="minutes">12</span>
+                                        <span>:</span>
+                                        <span class="seconds">00</span>
                                         <span class="evmor">AM</span>
                                     </div>
                                 </div>
@@ -89,14 +96,43 @@
                     <main>
                         <div class="content_wraper">
                             <section>
-                                <div class="home_" style="width: 100%; height: 85vh; background-color: red;">
+                                <div id="carouselExampleCaptions" class="carousel slide">
                                     <div class="home_content">
-                                        d
+                                        <div id="carouselExampleCaptions" class="carousel slide">
+                                            <div class="carousel-inner">
+                                              <div class="carousel-item active">
+                                                <img src="/Images/hero-desktop-2500w.jpg" class="d-block w-100" alt="home image">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                  <h5>First slide label</h5>
+                                                </div>
+                                              </div>
+                                              <div class="carousel-item">
+                                                <img src="/Images/aboutImage3.webp" class="d-block w-100" alt="home image">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                  <h5>Second slide label</h5>
+                                                </div>
+                                              </div>
+                                              <div class="carousel-item">
+                                                <img src="/Images/aboutImage5.webp" class="d-block w-100" alt="home image">
+                                                <div class="carousel-caption d-none d-md-block">
+                                                  <h5>Third slide label</h5>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                              <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                              <span class="visually-hidden">Next</span>
+                                            </button>
+                                          </div>
                                     </div>
                                 </div>
                             </section>
 
-                            <section id="about" style="width: 100%; height: 100vh;">
+                            <section id="about" style="width: 100%; height: 100%;">
                                 <div class="about_food">
                                     <div class="about_header">
                                         <div class="about_head">
@@ -207,13 +243,76 @@
                                                 </div>
 
                                                 <div class="about_item_desc">
-                                                    <p>Remind diners that you’re their favorite</p>
+                                                    <p>Remind diners that you&apos;re their favorite</p>
                                                     <p>spot, and keep them coming back.</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                            </section>
+
+                            <section id="menu" style="width: 100%; height: 100%;">
+                                <div class="menu">
+                                    <div class="menu_wrapper">
+                                        <div class="menu_header">
+                                            <h2>Menu</h2>
+                                            <span>What we serve</span>
+                                        </div>
+
+                                        <div class="menu_items">
+                                            <div class="meuuu_food">
+                                                <div class="menu_search">
+                                                    <input type="text" placeholder="search through the menu" id="search" onchange="handleSearchFunction">
+                                                </div>
+
+                                                <div class="menu_food_container">
+                                                    <!-- food loading from api here  -->
+                                                    <div class="menu__item_">
+                                                        <!-- <div class="menu_item">
+                                                            <div class="menu_item_image">
+                                                                <img src="/Images/aboutImage2.webp" alt="menu image">
+                                                            </div>
+
+                                                            <div class="item_body">
+                                                                <div class="menu_name">
+                                                                    <h3>Gari</h3>
+                                                                </div>
+
+                                                                <div class="menu_price">
+                                                                    <p>25.00</p>
+                                                                </div>
+
+                                                                <div class="menu_button">
+                                                                    <button>Buy</button>
+                                                                </div>
+                                                            </div>
+                                                        </div> -->
+
+                                                        <div class="spinner">
+                                                            <div class="loader"></div>
+                                                            <div class="loader"></div>
+                                                            <div class="loader"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="footer" style="width: 100%; height: 100px;">
+                                <footer>
+                                    <div class="footer_container">
+                                        <h2>G-KANAD</h2>
+                                    </div>
+
+                                    <div class="copy_right">
+                                        <span class="copy_right"></span>
+                                        <span>&copy; G-KANAD software development company</span>
+                                    </div>
+                                </footer>
                             </section>
                         </div>
                     </main>
@@ -229,7 +328,15 @@
         userImage.addEventListener('click', function() {
             auth.classList.toggle('auth_active')
         })
+
+        const Cpy = document.querySelector('.copy_right')
+
+        const year = new Date()
+        const getYear = year.getFullYear()
+
+        Cpy.textContent = getYear
     </script>
     
+    <script src="index.js"></script>
 </body>
 </html>
